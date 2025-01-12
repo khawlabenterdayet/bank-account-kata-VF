@@ -7,6 +7,7 @@ The following tests validate the behavior of deposit and withdrawal methods to e
 handling of edge cases and valid operations.
 
 **# Tests Overview : AccountServiceImplTest**
+
 **1. `testDeposit_AmountLessThanOrEqualToZero_ShouldThrowException`**
 - **Description**: This test ensures that if a user attempts to deposit an amount less than or equal
 to zero, an `IllegalArgumentException` is thrown.
@@ -15,6 +16,8 @@ system correctly rejects such input by throwing the appropriate exception.
 - **Expected Outcome**: The method should throw an `IllegalArgumentException` with the message
 "Deposit amount must be greater than zero."
 
+
+
 **2. `testDeposit_ValidAmount_ShouldSucceed`**
 - **Description**: This test checks if a valid deposit operation (amount greater than zero) 
 successfully updates the account balance.
@@ -22,6 +25,8 @@ successfully updates the account balance.
 the account balance is updated as expected.
 - **Expected Outcome**: The deposit should succeed, and the account balance should increase by the
 specified amount.
+
+
 
  ****3. `testWithdraw_AmountLessThanOrEqualToZero_ShouldThrowException`****
 - **Description**: This test validates that when a user tries to withdraw an amount less than or 
@@ -39,6 +44,7 @@ This test ensures the system correctly checks the balance before processing the 
 - **Expected Outcome**: The method should throw an `IllegalArgumentException` with the message 
 "The balance is insufficient to withdraw."
 
+
 **5. `testWithdraw_ValidAmount_ShouldSucceed`**
 - **Description**: This test checks if a valid withdrawal operation (amount less than or equal 
 to the account balance) is successfully processed.
@@ -47,7 +53,11 @@ should be reduced by the withdrawal amount.
 - **Expected Outcome**: The withdrawal should succeed, and the account balance should decrease by
 the specified amount.
 
+
+
 **# Tests Overview : StatementPrinterImplTest**
+
+
 **1. `shouldPrintStatement`**
 - **Description**:
 This test ensures that the statement print functionality formats the operations in the correct way.
