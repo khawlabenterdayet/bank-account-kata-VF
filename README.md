@@ -63,6 +63,8 @@ the specified amount.
 This test ensures that the statement print functionality formats the operations in the correct way.
 It verifies that the output statement correctly prints a list of operations in a structured and 
 human-readable format, which includes the date, operation type, amount, and balance.
+
+
 **2. `shouldRecordOperationsInHistory`**
 - **Description**:
 This test ensures that every operation (such as deposits and withdrawals) is properly recorded in the transaction
